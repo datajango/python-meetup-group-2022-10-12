@@ -1,0 +1,24 @@
+### /
+GET http://localhost:8000/
+
+
+### /users
+GET http://localhost:8000/users
+
+
+### /
+GET http://localhost:8000/users/me
+
+
+### /
+GET http://localhost:8000/users/tony
+
+### Create user tony
+POST http://localhost:8000/users/
+content-type: application/json
+
+{
+    "username": "tony",
+    "password": "1234",
+    "email": "tony@test.com"
+}
